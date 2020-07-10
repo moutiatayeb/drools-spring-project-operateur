@@ -1,0 +1,22 @@
+package rules
+ 
+import com.javainuse.model.Operateur
+rule "Offer pour Ooredoo"
+	when 
+		productObject: Operateur(type=="ooredoo")
+	then
+		productObject.setPrix(15);
+	end
+rule "Offer pour Orange"
+	when 
+		productObject: Operateur(type=="orange")
+	then
+		productObject.setPrix(25);
+	end
+
+rule "Offer pour Telecom"
+	when
+		productObject: Operateur(type=="telecom")
+	then
+		productObject.setPrix(5);
+	end
