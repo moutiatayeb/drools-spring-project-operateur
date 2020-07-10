@@ -20,5 +20,4 @@ public class Operateur {
 	public void setPrix(int prix) {
 		this.prix = prix;
 	}
-
 }
